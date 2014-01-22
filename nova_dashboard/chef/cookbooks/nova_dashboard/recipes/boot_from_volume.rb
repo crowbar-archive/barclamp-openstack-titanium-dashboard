@@ -64,8 +64,8 @@ if platform_family?("debian")
 		
 		# rebuild compressed js Horizon files.
 		bash "manage" do
-			code "#{compressJavascript}/manage.py compress"
-			#code "#{compressJavascript}/manage.py compress --force"
+			#code "#{compressJavascript}/manage.py compress"
+			code "#{compressJavascript}/manage.py compress --force"
 			user "root"
 		end
 	end
