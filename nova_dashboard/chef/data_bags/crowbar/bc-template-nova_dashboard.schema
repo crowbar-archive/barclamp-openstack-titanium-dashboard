@@ -12,6 +12,8 @@
           "type": "map",
           "required": true,
           "mapping": {
+            "haproxy_instance": { "type": "str" },
+            "percona_instance": { "type": "str" },
             "database_engine": { "type": "str", "required": true },
             "nova_instance": { "type": "str", "required": true },
             "keystone_instance": { "type": "str", "required": true },

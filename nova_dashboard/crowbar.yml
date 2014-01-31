@@ -1,4 +1,4 @@
-# Copyright 2011, Dell, Inc.
+# Copyright 2014, Dell, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,21 +11,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# Author: RobHirschfeld
-#
 
 barclamp:
   name: nova_dashboard
   display: Nova Dashboard
-#  description: User Interface for OpenStack projects (aka code name Horizon)
-  description: '(Ha) OpenStack Dashboard: graphical interface to access, provision and automate cloud-based resources'
+  description: 'OpenStack HA - dashboard: graphical interface to access, provision and automate cloud-based resources' 
   version: 0
   requires:
+    - haproxy
+    - percona
     - keystone
-#    - nova
+    - nova
   member:
     - haopenstack
+os_support:
+    - ubuntu-12.04
 
 crowbar:
   layout: 1
