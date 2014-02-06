@@ -1,8 +1,10 @@
 {
   "id": "bc-template-nova_dashboard",
-  "description": "User Interface for OpenStack projects (code name Horizon)",
+  "description": "OpenStack HA - dashboard: graphical interface to access, provision and automate cloud-based resources",
   "attributes": {
     "nova_dashboard": {
+      "haproxy_instance": "",
+      "percona_instance": "",
       "database_engine": "database",
       "nova_instance": "none",
       "keystone_instance": "none",
