@@ -20,6 +20,13 @@ This barclamp is designed to be used in conjunction with the OpenStack High-Avai
 
 This barclamp should be applued to  3 controller nodes.
 
+This barclamp is responsible for installing and configuring the Apache hosted website which provides a Django-based user interface to OpenStack services including Nova, Swift, Keystone, etc. 
+
+This is the final barclamp to be installed and as such the prerequisite for the nova dashboard proposal to be applied are the following: HAProxy, Percona, RabbitMQ, Keystone, Glance, Cinder, Quantum and Nova. 
+
+3 controller nodes must added to the multi-controller role. The proposal can be applied as usual, the deployment of the role is represented by a circular icon that goes to a spinning state in deploying state to a deployed state. Quick verification of the successful deployment can be viewed by browsing to each controller independently (Port 80) and through the loadbalanced public virtual IP.
+
+
 
 Legals
 -------------------------------------
